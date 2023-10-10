@@ -2,8 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Pacifico&family=Satisfy&family=Tilt+Prism&display=swap');
 
-/*!--------------------INDEX-----------------------*/
-
 /*!--------------------RESET----------------------*/
 *{
     margin: 0;
@@ -51,10 +49,22 @@ header nav ul li a{
 }
 
 
+@media screen and (max-width: 487px) {
+    header{
+        position: static;
+    }
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav ul li{
+        margin: 2px;
+    }
 
+}
 
+/*!---------------------INDEX-----------------------*/
 /*!---------------------MAIN----------------------*/
-
 
 main {
     background-color: rgb(248, 208, 106);
@@ -73,52 +83,57 @@ main {
     text-align: center; 
     
 }
-
 .hero p {
-    font-size: 40px;
+    font-size: 45px;
     color: rgb(255, 3, 3);
     margin-bottom: 85px;
+    border: 2px solid rgb(241, 241, 241);
     
 }
-
 .hero a {
     text-decoration: none;
     color: rgb(15, 15, 15);
-    font-size: 20px;
+    font-size: 30px;
     background-color: rgb(252, 214, 44);
-    padding: 10px;
+    padding: 15px;
     border: 2px solid rgb(218, 28, 28);
     border-radius: 15px;
 }
-
 .TituloSecundario {
     color: rgb(10, 60, 240);
     border: 2px solid rgb(241, 241, 241);
     font-size: 80px;
     text-align: center;
 }
+.mision {
+    text-align: center;
+}
+.TituloSecundario2 {
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(241, 241, 241);
+    font-size: 60px;
+    text-align: center;
+}
 
 .mision p {
-    font-size: 40px;
+    font-size: 45px;
     color: rgb(250, 108, 7);
     text-align: center;
 }
 
 .nuevos-cursos h2 {
     text-align: center;
-    color: rgb(2, 51, 2);
-    font-size: 30px;
+    color: rgb(0, 0, 0);
+    font-size: 45px;
     background-color: rgb(252, 236, 17);
     padding: 10px;
 }
-
 .nuevos {
     display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
     gap: 10px; 
     justify-items: center; 
 }
-
 .nuevos div {
     width: 100%;
     border: 2px solid rgb(2, 51, 2);
@@ -129,14 +144,6 @@ main {
     align-items: center;
     justify-content: center;
 }
-
-.nuevos div a {
-    text-decoration: none;
-    color: rgb(240, 104, 6);
-    background-color: rgba(252, 252, 251, 0.979);
-    padding: 5px;
-}
-
 .nuevos div img {
     width: 200px;
     height: 250px;
@@ -144,14 +151,17 @@ main {
     -webkit-box-shadow: -2px -9px 36px 3px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -2px -9px 36px 3px rgba(0, 0, 0, 0.75);
 }
-
 .nuevos div h3 {
     margin: 10px;
 }
-
-.mision {
-    text-align: center;
+.nuevos div a {
+    text-decoration: none;
+    color: rgb(240, 104, 6);
+    background-color: rgba(252, 252, 251, 0.979);
+    padding: 5px;
 }
+
+
 
 @media screen and (max-width: 850px) {
     .hero h2 {
@@ -162,6 +172,7 @@ main {
         text-align: center;
     }
 }
+
 @media screen and (max-width: 710px) {
     .hero h2 {
         font-size: 30px;
@@ -170,13 +181,19 @@ main {
 
 @media screen and (max-width: 320px) {
     .hero a {
-        font-size: 12px;
+        font-size: 20px;
     }
 }
 
+
 @media screen and (max-width: 710px) {
-    .TituloSecundario {
+    .TituloSecundario2 {
         font-size: 40px;
+    }
+}
+@media screen and (max-width: 710px) {
+    .nuevos-cursos h2 {
+        font-size: 36px;
     }
 }
 @media screen and (max-width: 710px) {
@@ -185,30 +202,39 @@ main {
     }
 }
 
+
 @media screen and (max-width: 570px) {
-    .TituloSecundario {
+    .TituloSecundario2 {
         font-size: 30px;
     }
 }
-
+@media screen and (max-width: 570px) {
+    .nuevos-cursos h2 {
+        font-size: 28px;
+    }
+}
 @media screen and (max-width: 570px) {
     .mision p {
         font-size: 28px;
     }
 }
+
+
 @media screen and (max-width: 320px) {
-    .TituloSecundario {
-        font-size: 18px;
+    .TituloSecundario2 {
+        font-size: 25px;
     }
 }
-
+@media screen and (max-width: 320px) {
+    .nuevos-cursos h2 {
+        font-size: 23px;
+    }
+}
 @media screen and (max-width: 320px) {
     .mision p {
-        font-size: 16px;
+        font-size: 23px;
     }
 }
-
-
 
 
 /*!--------------------FOOTER---------------------*/
@@ -228,128 +254,47 @@ footer h2{
 
 
 
-/*!--------------------GALERIA-----------------------*/
+/*!--------------------inscripcion-----------------------*/
 
 /*!---------------------MAIN----------------------*/
 
-
-.galeria h2 {
-    color: rgb(3, 17, 1);
-    font-size: 60px;
-    font-style: italic;
-    font-weight: 300;
-    text-align: center;
-}
-
-.galeria h3 {
-    color: rgb(3, 17, 1);
-    font-size: 20px;
-    font-style: italic;
-    font-weight: 300;
-    text-align: center;
-}
-
-.galeria div {
+.inscripciones {
     display: flex;
-    flex-direction: column;
-    justify-content: center; 
+    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 1.25rem;
-    width: 300px;
-    height: 400px;
+}
+
+
+.cursos {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
+.cursos div {
+    width: 310px;
+    height: 450px;
     border: 2px solid rgb(2, 51, 2);
     text-align: center;
     margin: 10px;
-    display: inline-block;
 }
-
-.galeria div img {
-    width: 250px;
-    height: 300px;
+.cursos div img{
+    width: 200px;;
+    height: 250px;
     box-shadow: -2px -9px 36px 3px rgba (0,0,0,0.75);
--webkit-box-shadow: -2px -9px 36px 3px rgba(0,0,0,0.75);
--moz-box-shadow: -2px -9px 36px 3px rgba(0,0,0,0.75);
-
+    -webkit-box-shadow: -2px -9px 36px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px -9px 36px 3px rgba(0,0,0,0.75);
 }
-
-.galeria div a{
-    text-decoration: none;
-    color: rgb(249, 123, 34);
-    background-color: rgba(124, 144, 112, 0.397);
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.cursos h3{
+    font-size: 24px;
+    color: rgb(138, 5, 78);
 }
-
-.galeria {
-    display: flex; 
-    flex-wrap: wrap; 
-    align-items: center;
-    justify-content: center; 
-    gap: 1.25rem;
+.cursos div p {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 800;
+    color: rgb(2, 51, 2);
     text-align: center;
-}
-
-.grid-galeria {
-    width: 100%;
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 1fr;
-    gap: 25px;
-    position: relative;
-    justify-content: center;
-    align-content: center;
-}
-
-.grid-galeria div {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-}
-
-.grid-galeria div img {
-    max-width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.grid-galeria h3 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(249, 124, 34, 0.26);
-    padding: 5px;
-    color: rgb(255, 255, 255);
-    text-align: center;
-}
-
-
-@media screen and (max-width: 750px) {
-    .grid-galeria {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 200px;
-        grid-template-areas: 
-    "grid-item1" "grid-item2" 
-    "grid-item3" "grid-item4" 
-    "grid-item5" "grid-item6"
-    ;
-    }
-    .grid-galeria h3 {
-        font-size: 14px; 
-    }
-    .grid-galeria h2{
-        font-size: 14px; 
-    }
-    .grid-galeria p{
-        font-size: 14px; 
-    }
+    padding: 10px;
 }
 
 
@@ -394,22 +339,6 @@ footer h2{
     }
 }
 
-
-@media screen and (max-width: 900px) {
-    header {
-        flex-direction: column;
-    }
-}
-
-
-
-@media screen and (max-width: 900px) {
-    footer {
-        flex-direction: column;
-    }
-}
-
-
 @media screen and (max-width: 665px) {
     .nosotros p{
         font-size: 18px;
@@ -425,33 +354,141 @@ footer h2{
 }
 
 
-@media screen and (max-width: 487px) {
-    header{
-        position: static;
-    }
-    header nav ul {
+@media screen and (max-width: 900px) {
+    header {
         flex-direction: column;
-        align-items: center;
     }
-    header nav ul li{
-        margin: 2px;
+}
+@media screen and (max-width: 900px) {
+    footer {
+        flex-direction: column;
     }
+}
 
+
+
+/*!--------------------CONTACTO-----------------------*/
+
+/*!---------------------MAIN----------------------*/
+.contacto-datos{
+    width: 100%;
+    height: 70vh;
+    text-align: left;
+}
+h3{font-size: 24px;
+    color: rgb(0, 0, 0);
+}
+
+.mapa div{
+    width: 100%;
+    height: 90vh;
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-align:center;
+}
+
+@media screen and (max-width: 410px) {
+    .contacto-datos {
+        font-size: 14px;
+        
+    }
+}
+@media screen and (max-width: 410px) {
+    .contacto-dejanos {
+        font-size: 14px;
+        
+    }
+}
+@media screen and (max-width: 410px) {
+    .contacto-dondeencontrarnos {
+        width: 318px;;
+        height: 318px;
+        
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .contacto-datos {
+        font-size: 12px;
+        
+    }
+}
+@media screen and (max-width: 350px) {
+    .contacto-dejanos {
+        font-size: 12px;
+        
+    }
+}
+/*!--------------------GALERIA-----------------------*/
+
+/*!---------------------MAIN----------------------*/
+
+.galeria {
+    display: flex; 
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center; 
+    gap: 1.25rem;
+    text-align: center;
+}
+.galeria h2 {
+    color: rgb(3, 17, 1);
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 300;
+    text-align: center;
+}
+
+
+.grid-galeria {
+    width: 100%;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 25px;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+}
+.grid-galeria div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+.grid-galeria div img {
+    max-width: 200%;
+    height: 200px;
+    object-fit: cover;
+    width: 250px;
+    height: 300px;
+    box-shadow: -2px -9px 36px 3px rgba (0,0,0,0.75);
+    -webkit-box-shadow: -2px -9px 36px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px -9px 36px 3px rgba(0,0,0,0.75);
 }
 
 @media screen and (max-width: 750px) {
-    header h1{
-        font-size: 60px;
+    .grid-galeria {
+        grid-template-columns: repeat(2, 1fr);
+
+        grid-template-areas: 
+    "grid-item1" "grid-item2" 
+    "grid-item3" "grid-item4" 
+    "grid-item5" "grid-item6"
+    "grid-item7" "grid-item8" 
+    "grid-item9" "grid-item10" 
+    "grid-item11" "grid-item12"
+    "grid-item13" "grid-item14" 
+    "grid-item15"
+    ;
     }
 }
-
-@media screen and (max-width: 480px) {
-    header h1{
-        font-size: 40px;
-    }
-}
-
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 490px) {
     .grid-galeria {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(6, 1fr);
@@ -462,72 +499,36 @@ footer h2{
     "grid-item4" 
     "grid-item5" 
     "grid-item6"
+    "grid-item7" 
+    "grid-item8" 
+    "grid-item9" 
+    "grid-item10" 
+    "grid-item11" 
+    "grid-item12"
+    "grid-item13" 
+    "grid-item14" 
+    "grid-item15" 
     ;
     }
-    .grid-galeria h3 {
-        font-size: 10px; 
+}
+@media screen and (max-width: 945px) {
+    .galeria h2{
+        font-size: 50px;
+        text-align: center;
     }
-    .grid-galeria h2{
-        font-size: 10px; 
+}
+
+@media screen and (max-width: 665px) {
+    .galeria h2{
+        font-size: 30px;
+        text-align: center;
     }
-    .grid-galeria p{
-        font-size: 10px; 
+}
+
+@media screen and (max-width: 492px) {
+    .galeria h2{
+        font-size: 30px;
+        text-align: center;
     }
-    }
-
-
-
-/*!--------------------inscripcion-----------------------*/
-
-/*!---------------------MAIN----------------------*/
-
-.cursos {
-    display: flex;
-    justify-content: center; 
-    flex-wrap: wrap; 
 }
-
-.cursos div {
-    width: 350px;
-    height: 450px;
-    border: 2px solid rgb(2, 51, 2);
-    text-align: center;
-    margin: 10px;
-}
-
-.cursos div p {
-    font-size: 20px;
-    font-style: italic;
-    font-weight: 800;
-    color: rgb(2, 51, 2);
-    text-align: center;
-    padding: 10px;
-}
-
-.inscripciones {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.inscripciones div img{
-    width: 200px;;
-    height: 250px;
-    box-shadow: -2px -9px 36px 3px rgba (0,0,0,0.75);
--webkit-box-shadow: -2px -9px 36px 3px rgba(0,0,0,0.75);
--moz-box-shadow: -2px -9px 36px 3px rgba(0,0,0,0.75);
-}
-
-.inscripciones h2{
-    font-size: 15px;
-    color: rgb(3, 17, 1);
-}
-
-
-
-/*!--------------------CONTACTO-----------------------*/
-
-/*!---------------------MAIN----------------------*/
-
-
 
