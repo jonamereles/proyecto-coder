@@ -1,7 +1,26 @@
-@import"./bases/reset.scss";
+@import"./components/variables";
+
+@import "./utilities/mixins";
+
+@import"./bases/reset";
 
 @import"./layout/header";
 
 @import"./layout/main";
 
 @import"./layout/footer";
+
+@import"./layout/media/media320";
+@import"./layout/media/media350";
+@import"./layout/media/media410";
+@import"./layout/media/media487";
+@import"./layout/media/media492";
+@import"./layout/media/media570";
+@import"./layout/media/media665";
+@import"./layout/media/media710";
+@import"./layout/media/media750";
+@import"./layout/media/media850";
+@import"./layout/media/media900";
+@import"./layout/media/media945";
+@import"./layout/media/media960";
+@import"./layout/media/media960";

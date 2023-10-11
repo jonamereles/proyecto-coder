@@ -18,14 +18,14 @@ header {
   padding: 15px;
   z-index: 1; }
   header h1 {
-    color: #070707;
+    color: black;
     font-size: 50px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 400;
     text-align: center; }
   header nav ul {
     list-style: none;
-    color: #031101;
+    color: black;
     display: flex; }
     header nav ul li {
       margin: 10px; }
@@ -87,14 +87,14 @@ main {
     gap: 10px;
     justify-items: center; }
     main .nuevos div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
       width: 100%;
       border: 2px solid #023302;
-      text-align: center;
       margin: 10px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center; }
+      flex-direction: column; }
     main .nuevos img {
       width: 200px;
       height: 250px;
@@ -181,11 +181,11 @@ main {
 /*---------------galeria--------------*/
 .galeria {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
-  gap: 1.25rem;
-  text-align: center; }
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 1.25rem; }
   .galeria h2 {
     color: #031101;
     font-size: 50px;
@@ -204,12 +204,12 @@ main {
   justify-content: center;
   align-content: center; }
   .grid-galeria div {
-    width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     text-align: center;
+    width: 100%;
+    flex-direction: column;
     position: relative; }
     .grid-galeria div img {
       max-width: 200%;
@@ -230,3 +230,146 @@ footer {
   footer h2 {
     color: #fee8b0;
     font-size: 40px; }
+
+@media screen and (max-width: 320px) {
+  .hero a {
+    font-size: 20px; } }
+
+@media screen and (max-width: 320px) {
+  .TituloSecundario2 {
+    font-size: 25px; } }
+
+@media screen and (max-width: 320px) {
+  .nuevos-cursos h2 {
+    font-size: 23px; } }
+
+@media screen and (max-width: 320px) {
+  .mision p {
+    font-size: 23px; } }
+
+@media screen and (max-width: 350px) {
+  .contacto-datos {
+    font-size: 12px; } }
+
+@media screen and (max-width: 350px) {
+  .contacto-dejanos {
+    font-size: 12px; } }
+
+@media screen and (max-width: 350px) {
+  .contacto-dondeencontrarnos {
+    width: 300px;
+    height: 300px; } }
+
+@media screen and (max-width: 410px) {
+  .contacto-datos {
+    font-size: 14px; } }
+
+@media screen and (max-width: 410px) {
+  .contacto-dejanos {
+    font-size: 14px; } }
+
+@media screen and (max-width: 410px) {
+  .contacto-dondeencontrarnos {
+    width: 318px;
+    height: 318px; } }
+
+@media screen and (max-width: 487px) {
+  header {
+    position: static; }
+  header nav ul {
+    flex-direction: column;
+    align-items: center; }
+  header nav ul li {
+    margin: 2px; } }
+
+@media screen and (max-width: 492px) {
+  .nosotros p {
+    font-size: 14px;
+    text-align: center; } }
+
+@media screen and (max-width: 492px) {
+  .grid-galeria {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "grid-item1"  "grid-item2"  "grid-item3"  "grid-item4"  "grid-item5"  "grid-item6" "grid-item7"  "grid-item8"  "grid-item9"  "grid-item10"  "grid-item11"  "grid-item12" "grid-item13"  "grid-item14"  "grid-item15"; } }
+
+@media screen and (max-width: 492px) {
+  .galeria h2 {
+    font-size: 30px;
+    text-align: center; } }
+
+@media screen and (max-width: 570px) {
+  .TituloSecundario2 {
+    font-size: 30px; } }
+
+@media screen and (max-width: 570px) {
+  .nuevos-cursos h2 {
+    font-size: 28px; } }
+
+@media screen and (max-width: 570px) {
+  .mision p {
+    font-size: 28px; } }
+
+@media screen and (max-width: 665px) {
+  .nosotros p {
+    font-size: 18px;
+    text-align: center; } }
+
+@media screen and (max-width: 665px) {
+  .galeria h2 {
+    font-size: 30px;
+    text-align: center; } }
+
+@media screen and (max-width: 710px) {
+  .hero h2 {
+    font-size: 30px; } }
+
+@media screen and (max-width: 710px) {
+  .TituloSecundario2 {
+    font-size: 40px; } }
+
+@media screen and (max-width: 710px) {
+  .nuevos-cursos h2 {
+    font-size: 36px; } }
+
+@media screen and (max-width: 710px) {
+  .mision p {
+    font-size: 36px; } }
+
+@media screen and (max-width: 750px) {
+  .grid-galeria {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "grid-item1" "grid-item2"  "grid-item3" "grid-item4"  "grid-item5" "grid-item6" "grid-item7" "grid-item8"  "grid-item9" "grid-item10"  "grid-item11" "grid-item12" "grid-item13" "grid-item14"  "grid-item15"; } }
+
+@media screen and (max-width: 850px) {
+  .hero h2 {
+    font-size: 50px; }
+  .hero p {
+    font-size: 20px;
+    text-align: center; } }
+
+@media screen and (max-width: 900px) {
+  header {
+    flex-direction: column; } }
+
+@media screen and (max-width: 900px) {
+  footer {
+    flex-direction: column; } }
+
+@media screen and (max-width: 945px) {
+  .nosotros p {
+    font-size: 22px;
+    text-align: center; } }
+
+@media screen and (max-width: 945px) {
+  .galeria h2 {
+    font-size: 50px;
+    text-align: center; } }
+
+@media screen and (max-width: 960px) {
+  .nosotros {
+    flex-direction: column; } }
+
+@media screen and (max-width: 960px) {
+  .nosotros {
+    flex-direction: column; } }

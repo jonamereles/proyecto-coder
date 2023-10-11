@@ -1,0 +1,16 @@
+$color-principal: #eeb109;
+$color-secundario: #f8d06a;
+$color-terciario: #f97b22;
+
+//! LISTAS
+$colores: black, white,#fcd62c, rgb(252, 236, 17);
+$font-size: 10px,12px,14px,16px,18px,20px,30px,40px,60px;
+
+//!mixins
+
+@mixin flex ($flex, $justify, $align, $text){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+    text-align: $text;
+}

@@ -1,0 +1,35 @@
+@media screen and (max-width: 492px) {
+    .nosotros p{
+        font-size: 14px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 492px) {
+    .grid-galeria {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+    "grid-item1" 
+    "grid-item2" 
+    "grid-item3" 
+    "grid-item4" 
+    "grid-item5" 
+    "grid-item6"
+    "grid-item7" 
+    "grid-item8" 
+    "grid-item9" 
+    "grid-item10" 
+    "grid-item11" 
+    "grid-item12"
+    "grid-item13" 
+    "grid-item14" 
+    "grid-item15" 
+    ;
+    }
+}
+@media screen and (max-width: 492px) {
+    .galeria h2{
+        font-size: 30px;
+        text-align: center;
+    }
+}

@@ -1,6 +1,6 @@
 header{
-    background-color: rgb(238, 177, 9);
-    position: sticky; 
+    background-color: $color-principal;
+    position: sticky;
     top: 0;
     display: flex;
     justify-content: space-between;
@@ -9,7 +9,7 @@ header{
     z-index: 1;
     
     h1{
-    color: rgb(7, 7, 7);
+    color: nth($colores, 1);
     font-size: 50px ;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 400;
@@ -19,13 +19,13 @@ header{
     nav{
         ul{
             list-style: none;
-            color:rgb(3, 17, 1) ;
+            color: nth($colores,1) ;
             display: flex;
             li{
                 margin: 10px;
                 a{
                     text-decoration: none;
-                    color: black;
+                    color: nth($colores, 1);
                 }
             }
         }

@@ -1,0 +1,12 @@
+@media screen and (max-width: 487px) {
+    header{
+        position: static;
+    }
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav ul li{
+        margin: 2px;
+    }
+}
