@@ -40,7 +40,6 @@ header nav ul {
 
 header nav ul li{
     margin: 10px;
-
 }
 
 header nav ul li a{
@@ -72,13 +71,13 @@ header nav ul li a{
 /*!---------------------MAIN----------------------*/
 
 main {
-    background-color: rgb(248, 208, 106);
+    background-color: #f5d78d;
 }
 
 .hero {
     width: 100%;
     height: 80vh;
-    background-image: url(../img/wes-hicks-MEL-jJnm7RQ-unsplash.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.295), rgba(0, 0, 0, 0.384)), url(../img/wes-hicks-MEL-jJnm7RQ-unsplash.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -86,13 +85,18 @@ main {
     display: grid; 
     place-items: center; 
     text-align: center; 
-    
+}
+.TituloSecundario {
+    color: rgb(12, 15, 184);
+    border: 2px solid rgb(241, 241, 241);
+    font-size: 80px;
+    text-align: center;
 }
 .hero p {
     font-size: 45px;
-    color: rgb(255, 3, 3);
+    color: rgb(255, 0, 0);
     margin-bottom: 85px;
-    border: 2px solid rgb(241, 241, 241);
+    border: 4px solid rgb(241, 241, 241);
     
 }
 .hero a {
@@ -104,12 +108,7 @@ main {
     border: 2px solid rgb(218, 28, 28);
     border-radius: 15px;
 }
-.TituloSecundario {
-    color: rgb(10, 60, 240);
-    border: 2px solid rgb(241, 241, 241);
-    font-size: 80px;
-    text-align: center;
-}
+
 .mision {
     text-align: center;
 }
@@ -132,6 +131,10 @@ main {
     font-size: 45px;
     background-color: rgb(252, 236, 17);
     padding: 10px;
+    transition: 1s;
+    &:hover{
+        transform: scale(0.5,1);
+    }
 }
 .nuevos {
     display: grid; 
@@ -141,7 +144,7 @@ main {
 }
 .nuevos div {
     width: 100%;
-    border: 2px solid rgb(2, 51, 2);
+    border: 2px solid rgb(0, 0, 0);
     text-align: center;
     margin: 10px;
     display: flex;
@@ -160,13 +163,15 @@ main {
     margin: 10px;
 }
 .nuevos div a {
+    transition: 1s;
+    &:hover{
+        transform: scale(2,3);
     text-decoration: none;
     color: rgb(240, 104, 6);
     background-color: rgba(252, 252, 251, 0.979);
     padding: 5px;
+    }
 }
-
-
 
 @media screen and (max-width: 850px) {
     .hero h2 {
@@ -237,7 +242,7 @@ main {
 }
 @media screen and (max-width: 320px) {
     .mision p {
-        font-size: 23px;
+        font-size: 21px;
     }
 }
 
@@ -283,7 +288,7 @@ footer h2{
 .cursos div {
     width: 310px;
     height: 450px;
-    border: 2px solid rgb(2, 51, 2);
+    border: 2px solid rgb(0, 0, 0);
     text-align: center;
     margin: 10px;
 }
@@ -299,7 +304,7 @@ footer h2{
     color: rgb(138, 5, 78);
 }
 .cursos div p {
-    font-size: 20px;
+    font-size: 15px;
     font-style: italic;
     font-weight: 800;
     color: rgb(2, 51, 2);
@@ -307,6 +312,11 @@ footer h2{
     padding: 10px;
 }
 
+@media screen and (max-width: 665px) {
+    .cursos {
+        flex-direction: column;
+    }
+}
 
 /*!..................NOSOTROS.............*/
 /*!---------------------MAIN----------------------*/
@@ -398,7 +408,7 @@ h3{font-size: 24px;
 }
 @media screen and (max-width: 410px) {
     .contacto-dondeencontrarnos {
-        width: 318px;;
+        width: 318px;
         height: 318px;
         
     }

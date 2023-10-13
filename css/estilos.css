@@ -3,10 +3,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Barriecito&family=Pacifico&family=Satisfy&family=Tilt+Prism&display=swap");
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 body {
-  font-family: 'Bricolage Grotesque', sans-serif; }
+  font-family: "Bricolage Grotesque", sans-serif;
+}
 
 header {
   background-color: #eeb109;
@@ -16,159 +18,197 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 15px;
-  z-index: 1; }
-  header h1 {
-    color: black;
-    font-size: 50px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 400;
-    text-align: center; }
-  header nav ul {
-    list-style: none;
-    color: black;
-    display: flex; }
-    header nav ul li {
-      margin: 10px; }
-      header nav ul li a {
-        text-decoration: none;
-        color: black; }
+  z-index: 1;
+}
+header h1 {
+  color: black;
+  font-size: 50px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+header nav ul {
+  list-style: none;
+  color: black;
+  display: flex;
+}
+header nav ul li {
+  margin: 10px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+}
 
 main {
-  background-color: #f8d06a; }
-  main .hero {
-    width: 100%;
-    height: 80vh;
-    background-image: url(../img/wes-hicks-MEL-jJnm7RQ-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    display: grid;
-    place-items: center;
-    text-align: center; }
-    main .hero .TituloSecundario {
-      color: #0a3cf0;
-      border: 2px solid #f1f1f1;
-      font-size: 80px;
-      text-align: center; }
-    main .hero p {
-      font-size: 45px;
-      color: #ff0303;
-      margin-bottom: 85px;
-      border: 2px solid #f1f1f1; }
-    main .hero a {
-      text-decoration: none;
-      color: #0f0f0f;
-      font-size: 30px;
-      background-color: #fcd62c;
-      padding: 15px;
-      border: 2px solid #da1c1c;
-      border-radius: 15px; }
-  main .mision {
-    text-align: center; }
-    main .mision .TituloSecundario2 {
-      color: black;
-      border: 2px solid #f1f1f1;
-      font-size: 60px;
-      text-align: center; }
-    main .mision p {
-      font-size: 45px;
-      color: #fa6c07;
-      text-align: center; }
-  main .nuevos-cursos h2 {
-    text-align: center;
-    color: black;
-    font-size: 45px;
-    background-color: #fcec11;
-    padding: 10px; }
-  main .nuevos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 10px;
-    justify-items: center; }
-    main .nuevos div {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      width: 100%;
-      border: 2px solid #023302;
-      margin: 10px;
-      flex-direction: column; }
-    main .nuevos img {
-      width: 200px;
-      height: 250px;
-      box-shadow: -2px -9px 36px 3px rgba(0, 0, 0, 0.75);
-      -webkit-box-shadow: -2px -9px 36px 3px rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: -2px -9px 36px 3px rgba(0, 0, 0, 0.75); }
-    main .nuevos h3 {
-      margin: 10px; }
-    main .nuevos a {
-      text-decoration: none;
-      color: #f06806;
-      background-color: rgba(252, 252, 251, 0.979);
-      padding: 5px; }
+  background-color: #f5d78d;
+}
+main .hero {
+  width: 100%;
+  height: 80vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.295), rgba(0, 0, 0, 0.384)), url(../img/wes-hicks-MEL-jJnm7RQ-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+main .hero .TituloSecundario {
+  color: rgb(12, 15, 184);
+  border: 2px solid rgb(241, 241, 241);
+  font-size: 80px;
+  text-align: center;
+}
+main .hero p {
+  font-size: 45px;
+  color: rgb(255, 0, 0);
+  margin-bottom: 85px;
+  border: 2px solid rgb(241, 241, 241);
+}
+main .hero a {
+  text-decoration: none;
+  color: rgb(15, 15, 15);
+  font-size: 30px;
+  background-color: rgb(252, 214, 44);
+  padding: 15px;
+  border: 2px solid rgb(218, 28, 28);
+  border-radius: 15px;
+}
+main .mision {
+  text-align: center;
+}
+main .mision .TituloSecundario2 {
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(241, 241, 241);
+  font-size: 60px;
+  text-align: center;
+}
+main .mision p {
+  font-size: 45px;
+  color: rgb(250, 108, 7);
+  text-align: center;
+}
+main .nuevos-cursos h2 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 45px;
+  background-color: rgb(252, 236, 17);
+  padding: 10px;
+  transition: 1s;
+}
+main .nuevos-cursos h2:hover {
+  transform: scale(0.5, 1);
+}
+main .nuevos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+  justify-items: center;
+}
+main .nuevos div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  border: 2px solid rgb(0, 0, 0);
+  margin: 10px;
+  flex-direction: column;
+}
+main .nuevos img {
+  width: 200px;
+  height: 250px;
+  box-shadow: -2px -9px 36px 3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -2px -9px 36px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px -9px 36px 3px rgba(0, 0, 0, 0.75);
+}
+main .nuevos h3 {
+  margin: 10px;
+}
+main .nuevos a {
+  transition: 1s;
+}
+main .nuevos a:hover {
+  transform: scale(2, 3);
+  text-decoration: none;
+  color: rgb(240, 104, 6);
+  background-color: rgba(252, 252, 251, 0.979);
+  padding: 5px;
+}
 
 /*---------------inscripciones------------*/
 .inscripciones {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap; }
-  .inscripciones div .cursos {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; }
-    .inscripciones div .cursos div {
-      width: 350px;
-      height: 450px;
-      border: 2px solid #023302;
-      text-align: center;
-      margin: 10px; }
-      .inscripciones div .cursos div a img {
-        width: 220px;
-        height: 250px;
-        box-shadow: -2px -9px 36px 3px rgba 0, 0, 0, 0.75;
-        -webkit-box-shadow: -2px -9px 36px 3px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: -2px -9px 36px 3px rgba(0, 0, 0, 0.75); }
-      .inscripciones div .cursos div h3 {
-        font-size: 24px;
-        color: #8a054e; }
-      .inscripciones div .cursos div p {
-        font-size: 20px;
-        font-style: italic;
-        font-weight: 800;
-        color: #023302;
-        text-align: center;
-        padding: 10px; }
+  flex-wrap: wrap;
+}
+.inscripciones div .cursos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.inscripciones div .cursos div {
+  width: 310px;
+  height: 450px;
+  border: 2px solid rgb(0, 0, 0);
+  text-align: center;
+  margin: 10px;
+}
+.inscripciones div .cursos div a img {
+  width: 200px;
+  height: 250px;
+  box-shadow: -2px -9px 36px 3px rgba 0, 0, 0, 0.75;
+  -webkit-box-shadow: -2px -9px 36px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px -9px 36px 3px rgba(0, 0, 0, 0.75);
+}
+.inscripciones div .cursos div h3 {
+  font-size: 24px;
+  color: rgb(138, 5, 78);
+}
+.inscripciones div .cursos div p {
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 800;
+  color: rgb(2, 51, 2);
+  text-align: center;
+  padding: 10px;
+}
 
 /*---------------nosotros--------------*/
 .nosotros {
   width: 100%;
   height: 100vh;
-  text-align: center; }
-  .nosotros div h2 {
-    font-size: 30px;
-    font-style: italic;
-    font-weight: 800;
-    color: #023302;
-    text-align: center;
-    padding: 10px; }
-  .nosotros div p {
-    font-size: 28px;
-    font-style: italic;
-    font-weight: 600;
-    color: #023302;
-    text-align: center;
-    padding: 20px; }
+  text-align: center;
+}
+.nosotros div h2 {
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 800;
+  color: rgb(2, 51, 2);
+  text-align: center;
+  padding: 10px;
+}
+.nosotros div p {
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 600;
+  color: rgb(2, 51, 2);
+  text-align: center;
+  padding: 20px;
+}
 
 /*---------------contacto--------------*/
 .contacto-datos {
   width: 100%;
   height: 70vh;
-  text-align: left; }
-  .contacto-datos div h3 {
-    font-size: 24px;
-    color: black; }
+  text-align: left;
+}
+.contacto-datos div h3 {
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+}
 
 .mapa div {
   width: 100%;
@@ -176,7 +216,8 @@ main {
   font-size: 24px;
   color: black;
   text-align: center;
-  text-align: center; }
+  text-align: center;
+}
 
 /*---------------galeria--------------*/
 .galeria {
@@ -185,13 +226,15 @@ main {
   align-items: center;
   text-align: center;
   flex-wrap: wrap;
-  gap: 1.25rem; }
-  .galeria h2 {
-    color: #031101;
-    font-size: 50px;
-    font-style: italic;
-    font-weight: 300;
-    text-align: center; }
+  gap: 1.25rem;
+}
+.galeria h2 {
+  color: black;
+  font-size: 50px;
+  font-style: italic;
+  font-weight: 300;
+  text-align: center;
+}
 
 .grid-galeria {
   width: 100%;
@@ -202,174 +245,184 @@ main {
   gap: 25px;
   position: relative;
   justify-content: center;
-  align-content: center; }
-  .grid-galeria div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    flex-direction: column;
-    position: relative; }
-    .grid-galeria div img {
-      max-width: 200%;
-      height: 200px;
-      object-fit: cover;
-      width: 250px;
-      height: 300px;
-      box-shadow: -2px -9px 36px 3px rgba 0, 0, 0, 0.75;
-      -webkit-box-shadow: -2px -9px 36px 3px rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: -2px -9px 36px 3px rgba(0, 0, 0, 0.75); }
+  align-content: center;
+}
+.grid-galeria div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  flex-direction: column;
+  position: relative;
+}
+.grid-galeria div img {
+  max-width: 200%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 250px;
+  height: 300px;
+  box-shadow: -2px -9px 36px 3px rgba 0, 0, 0, 0.75;
+  -webkit-box-shadow: -2px -9px 36px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px -9px 36px 3px rgba(0, 0, 0, 0.75);
+}
 
 footer {
   background-color: #f97b22;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px; }
-  footer h2 {
-    color: #fee8b0;
-    font-size: 40px; }
+  padding: 10px;
+}
+footer h2 {
+  color: rgb(254, 232, 176);
+  font-size: 40px;
+}
 
 @media screen and (max-width: 320px) {
   .hero a {
-    font-size: 20px; } }
-
-@media screen and (max-width: 320px) {
-  .TituloSecundario2 {
-    font-size: 25px; } }
-
-@media screen and (max-width: 320px) {
-  .nuevos-cursos h2 {
-    font-size: 23px; } }
-
-@media screen and (max-width: 320px) {
+    font-size: 20px;
+  }
   .mision p {
-    font-size: 23px; } }
-
+    font-size: 23px;
+  }
+  .TituloSecundario2 {
+    font-size: 25px;
+  }
+  .nuevos-cursos h2 {
+    font-size: 23px;
+  }
+}
 @media screen and (max-width: 350px) {
   .contacto-datos {
-    font-size: 12px; } }
-
-@media screen and (max-width: 350px) {
+    font-size: 12px;
+  }
   .contacto-dejanos {
-    font-size: 12px; } }
-
-@media screen and (max-width: 350px) {
+    font-size: 12px;
+  }
   .contacto-dondeencontrarnos {
     width: 300px;
-    height: 300px; } }
-
+    height: 300px;
+  }
+}
 @media screen and (max-width: 410px) {
   .contacto-datos {
-    font-size: 14px; } }
-
-@media screen and (max-width: 410px) {
+    font-size: 14px;
+  }
   .contacto-dejanos {
-    font-size: 14px; } }
-
-@media screen and (max-width: 410px) {
+    font-size: 14px;
+  }
   .contacto-dondeencontrarnos {
     width: 318px;
-    height: 318px; } }
-
+    height: 318px;
+  }
+}
 @media screen and (max-width: 487px) {
   header {
-    position: static; }
+    position: static;
+  }
   header nav ul {
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+  }
   header nav ul li {
-    margin: 2px; } }
-
+    margin: 2px;
+  }
+}
 @media screen and (max-width: 492px) {
   .nosotros p {
     font-size: 14px;
-    text-align: center; } }
-
-@media screen and (max-width: 492px) {
+    text-align: center;
+  }
   .grid-galeria {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: "grid-item1"  "grid-item2"  "grid-item3"  "grid-item4"  "grid-item5"  "grid-item6" "grid-item7"  "grid-item8"  "grid-item9"  "grid-item10"  "grid-item11"  "grid-item12" "grid-item13"  "grid-item14"  "grid-item15"; } }
-
-@media screen and (max-width: 492px) {
+    grid-template-areas: "grid-item1" "grid-item2" "grid-item3" "grid-item4" "grid-item5" "grid-item6" "grid-item7" "grid-item8" "grid-item9" "grid-item10" "grid-item11" "grid-item12" "grid-item13" "grid-item14" "grid-item15";
+  }
   .galeria h2 {
     font-size: 30px;
-    text-align: center; } }
-
+    text-align: center;
+  }
+}
 @media screen and (max-width: 570px) {
   .TituloSecundario2 {
-    font-size: 30px; } }
-
-@media screen and (max-width: 570px) {
+    font-size: 30px;
+  }
   .nuevos-cursos h2 {
-    font-size: 28px; } }
-
-@media screen and (max-width: 570px) {
+    font-size: 28px;
+  }
   .mision p {
-    font-size: 28px; } }
-
+    font-size: 28px;
+  }
+}
 @media screen and (max-width: 665px) {
+  .cursos {
+    flex-direction: column;
+  }
   .nosotros p {
     font-size: 18px;
-    text-align: center; } }
-
-@media screen and (max-width: 665px) {
+    text-align: center;
+  }
   .galeria h2 {
     font-size: 30px;
-    text-align: center; } }
-
+    text-align: center;
+  }
+}
 @media screen and (max-width: 710px) {
   .hero h2 {
-    font-size: 30px; } }
-
-@media screen and (max-width: 710px) {
+    font-size: 30px;
+  }
   .TituloSecundario2 {
-    font-size: 40px; } }
-
-@media screen and (max-width: 710px) {
+    font-size: 40px;
+  }
   .nuevos-cursos h2 {
-    font-size: 36px; } }
-
-@media screen and (max-width: 710px) {
+    font-size: 36px;
+  }
   .mision p {
-    font-size: 36px; } }
-
+    font-size: 36px;
+  }
+}
 @media screen and (max-width: 750px) {
   .grid-galeria {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "grid-item1" "grid-item2"  "grid-item3" "grid-item4"  "grid-item5" "grid-item6" "grid-item7" "grid-item8"  "grid-item9" "grid-item10"  "grid-item11" "grid-item12" "grid-item13" "grid-item14"  "grid-item15"; } }
-
+    grid-template-areas: "grid-item1" "grid-item2" "grid-item3" "grid-item4" "grid-item5" "grid-item6" "grid-item7" "grid-item8" "grid-item9" "grid-item10" "grid-item11" "grid-item12" "grid-item13" "grid-item14" "grid-item15";
+  }
+}
 @media screen and (max-width: 850px) {
   .hero h2 {
-    font-size: 50px; }
+    font-size: 50px;
+  }
   .hero p {
     font-size: 20px;
-    text-align: center; } }
-
+    text-align: center;
+  }
+}
 @media screen and (max-width: 900px) {
   header {
-    flex-direction: column; } }
-
-@media screen and (max-width: 900px) {
+    flex-direction: column;
+  }
   footer {
-    flex-direction: column; } }
-
+    flex-direction: column;
+  }
+}
 @media screen and (max-width: 945px) {
   .nosotros p {
     font-size: 22px;
-    text-align: center; } }
-
-@media screen and (max-width: 945px) {
+    text-align: center;
+  }
   .galeria h2 {
     font-size: 50px;
-    text-align: center; } }
-
+    text-align: center;
+  }
+}
 @media screen and (max-width: 960px) {
   .nosotros {
-    flex-direction: column; } }
-
+    flex-direction: column;
+  }
+}
 @media screen and (max-width: 960px) {
   .nosotros {
-    flex-direction: column; } }
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=estilos.css.map */
