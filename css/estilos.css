@@ -31,6 +31,7 @@ header nav ul {
   list-style: none;
   color: black;
   display: flex;
+  padding: 10px;
 }
 header nav ul li {
   margin: 10px;
@@ -38,6 +39,7 @@ header nav ul li {
 header nav ul li a {
   text-decoration: none;
   color: black;
+  font-size: 20px;
 }
 
 main {
