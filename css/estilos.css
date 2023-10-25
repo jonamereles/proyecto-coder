@@ -327,7 +327,7 @@ footer h2 {
   font-size: 40px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 350px) {
   .hero a {
     font-size: 20px;
   }
@@ -340,8 +340,6 @@ footer h2 {
   .nuevos-cursos h2 {
     font-size: 23px;
   }
-}
-@media screen and (max-width: 350px) {
   .contacto-datos {
     font-size: 12px;
   }
