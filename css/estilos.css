@@ -73,7 +73,7 @@ main .hero p {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
 }
-main .hero .boton {
+main .boton {
   width: 6em;
   height: 5ex;
   background-color: gold;
@@ -83,7 +83,7 @@ main .hero .boton {
   color: black;
   cursor: pointer;
 }
-main .hero .boton a {
+main .boton a {
   text-decoration: none;
   color: rgb(15, 15, 15);
   font-size: 30px;
@@ -92,25 +92,27 @@ main .hero .boton a {
   border: 2px solid rgb(218, 28, 28);
   border-radius: 15px;
 }
-main .hero .boton:hover {
+main .boton:hover {
   background-color: bisque;
 }
-main .mision {
+
+.mision {
   text-align: center;
 }
-main .mision .TituloSecundario2 {
+.mision .TituloSecundario2 {
   color: rgb(0, 0, 0);
   border: 2px solid rgb(241, 241, 241);
   font-size: 60px;
   text-align: center;
 }
-main .mision p {
+.mision p {
   font-size: 45px;
   color: rgb(250, 108, 7);
   text-align: center;
   padding: 15px;
 }
-main .nuevos-cursos h2 {
+
+.nuevos-cursos h2 {
   text-align: center;
   color: rgb(0, 0, 0);
   font-size: 45px;
@@ -118,16 +120,17 @@ main .nuevos-cursos h2 {
   padding: 10px;
   transition: 1s;
 }
-main .nuevos-cursos h2:hover {
+.nuevos-cursos h2:hover {
   transform: scale(0.5, 1);
 }
-main .nuevos {
+
+.nuevos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 10px;
   justify-items: center;
 }
-main .nuevos div {
+.nuevos div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -137,20 +140,20 @@ main .nuevos div {
   margin: 10px;
   flex-direction: column;
 }
-main .nuevos img {
+.nuevos img {
   width: 200px;
   height: 250px;
   box-shadow: -2px -9px 36px 3px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: -2px -9px 36px 3px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -2px -9px 36px 3px rgba(0, 0, 0, 0.75);
 }
-main .nuevos h3 {
+.nuevos h3 {
   margin: 10px;
 }
-main .nuevos a {
+.nuevos a {
   transition: 1s;
 }
-main .nuevos a:hover {
+.nuevos a:hover {
   transform: scale(2, 3);
   text-decoration: none;
   color: rgb(240, 104, 6);
@@ -164,19 +167,20 @@ main .nuevos a:hover {
   justify-content: space-around;
   flex-wrap: wrap;
 }
-.inscripciones div .cursos {
+
+.cursos {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-.inscripciones div .cursos div {
+.cursos div {
   width: 310px;
   height: 450px;
   border: 2px solid rgb(0, 0, 0);
   text-align: center;
   margin: 10px;
 }
-.inscripciones div .cursos div a img {
+.cursos div a img {
   width: 200px;
   height: 250px;
   box-shadow: -2px -9px 36px 3px rgba 0, 0, 0, 0.75;
@@ -184,14 +188,14 @@ main .nuevos a:hover {
   -moz-box-shadow: -2px -9px 36px 3px rgba(0, 0, 0, 0.75);
   transition: 1s;
 }
-.inscripciones div .cursos div a img:hover {
+.cursos div a img:hover {
   transform: scale(1.4, 1);
 }
-.inscripciones div .cursos div h3 {
+.cursos div h3 {
   font-size: 24px;
   color: rgb(138, 5, 78);
 }
-.inscripciones div .cursos div p {
+.cursos div p {
   font-size: 15px;
   font-style: italic;
   font-weight: 800;
